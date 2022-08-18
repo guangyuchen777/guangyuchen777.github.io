@@ -1,0 +1,116 @@
+:root {
+    --primaryTextColor: black;
+    --hoverColor: #8002df;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+
+.Nav_layout {
+    display:flex;
+    padding: 5px 120px;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.Nav_logo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.Nav_logo a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item {
+    display:flex;
+    /* align-items: center; */
+    cursor: pointer;
+    transform: translate(-100%, 0);
+}
+
+.Nav_item a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item a:hover {
+    color: var(--hoverColor);
+}
+
+.Nav_item > h4 {
+    margin-left: 20px;
+}
+
+
+.MainBody {
+    padding: 130px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+/* style just for projects------------------------------------------------------ */
+.MainBody > h4 {
+    /* font-size: 15px; */
+    font-weight: 200;
+    width: 85%;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.MainBody > p {
+    margin-left: 0;
+    text-align: left;
+}
+
+.MainBody > ul {
+    list-style-type: decimal;
+    margin-top: 0;
+    text-align: left;
+}
+
+
+img {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.icon {
+    width:200px;
+    padding:0;
+}
+
+.half {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:40px;
+    /* margin-top: 50px; */
+}
+
+.half > img {
+    width:40%;
+}

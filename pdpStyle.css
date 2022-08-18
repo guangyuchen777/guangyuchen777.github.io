@@ -1,0 +1,167 @@
+:root {
+    --primaryTextColor: black;
+    --hoverColor: #8002df;
+    --transparentPurple: rgb(128, 2, 223,0.5);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+
+a {
+    color: black;
+    text-decoration:none;
+}
+
+
+.Nav_layout {
+    display:flex;
+    padding: 5px 120px;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.Nav_logo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.Nav_logo a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item {
+    display:flex;
+    /* align-items: center; */
+    cursor: pointer;
+    transform: translate(-100%, 0);
+}
+
+.Nav_item a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item a:hover {
+    color: var(--hoverColor);
+}
+
+.Nav_item > h4 {
+    margin-left: 20px;
+}
+
+
+.MainBody {
+    padding: 130px 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+/* style just for projects------------------------------------------------------ */
+.page {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.page_alter {
+    min-height: 100vh;
+    width: 100%;
+    box-shadow:
+    0 0 60px 20px #fff,  /* inner white */
+    0 0 100px 25px var(--hoverColor), /* middle magenta */
+    0 0 140px 30px #0ff;
+    position: relative;
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0;
+    /* background-color: var(--hoverColor); */
+}
+
+.container > h1 {
+    font-size: 25px;
+    display: table;
+    width: fit-content;
+    margin-bottom: 3rem;
+    border-bottom: var(--hoverColor) 1px solid;
+    text-transform: uppercase;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+}
+
+article > h4 {
+    width: 85%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+article> p {
+    margin-left: 0;
+    text-align: left;
+}
+
+article > ul {
+    list-style-type: decimal;
+    margin-top: 0;
+    text-align: left;
+}
+
+.article_seperation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+    margin-top: 3rem;
+    border-bottom: var(--hoverColor) 1px solid;
+    margin-bottom: 0;
+}
+
+
+
+img {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.icon {
+    width:200px;
+    padding:0;
+}
+
+.half {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:40px;
+    /* margin-top: 50px; */
+}
+
+.half > img {
+    width:40%;
+}

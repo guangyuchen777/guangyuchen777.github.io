@@ -1,0 +1,232 @@
+:root {
+    --primaryTextColor: black;
+    --hoverColor: #8002df;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.Nav_layout {
+    display:flex;
+    padding: 5px 120px;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.Nav_logo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.Nav_logo a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item {
+    display:flex;
+    /* align-items: center; */
+    cursor: pointer;
+    transform: translate(-100%, 0);
+}
+
+.Nav_item a {
+    color:black;
+    text-decoration:none;
+}
+
+.Nav_item a:hover {
+    color: var(--hoverColor);
+}
+
+.Nav_item > h4 {
+    margin-left: 20px;
+}
+
+
+.MainBody {
+    padding: 10px 120px;
+}
+
+
+.Head {
+    display: flex;
+    margin-top: 110px;
+}
+
+
+.Head_introduce {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.Head_introduce > h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.Head_introduce > h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.Head_introduce > h3 {
+    font-size: 23px;
+    /* font-weight:normal; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.purple {
+    color:var(--hoverColor);
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+    /* font-style: italic; */
+}
+
+
+.Work {
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+
+
+.card_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+
+.indi_card_layout {
+    position: relative;
+    width: 400px;
+    height: 340px; 
+    cursor: pointer;
+}
+
+
+.indi_card_layout_alter {
+    position: relative;
+    width: 300px;
+    height: 250px; 
+    cursor: pointer;
+}
+
+.card_img {
+    /* background: radial-gradient(circle, #eeafca 0%, rgba(148,187,233,1) 100%); */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin:0;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+
+.indi_card_layout:hover .overlay{
+    opacity: 0.4;
+}
+
+.card_title {
+    position: absolute;
+    /* background-color: rgb(132, 198, 255); */
+    margin:0;
+    top: 50%;
+    left: 50%;
+     /* translate the 50% of the element's width and hight */
+    transform: translate(-50%, -50%);
+    width:80%;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.card_time {
+    position: absolute;
+    /* background-color: rgb(132, 198, 255); */
+    margin:0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.indi_card_layout:hover .card_img{
+    /* backdrop-filter: blur(4px); */
+      filter: blur(2px);
+      transition: 0.5s ease;
+}
+
+.indi_card_layout:hover .card_title{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.indi_card_layout:hover .card_time{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+
+ /* Applying CSS to sphere */
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left:30%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 30px;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item:hover {
+  color: var(--hoverColor);
+  text-shadow: 0 0 10px #ffffff, 0 0 70px #a127ff;
+}
