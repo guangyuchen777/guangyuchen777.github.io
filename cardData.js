@@ -26,7 +26,7 @@ const card_data = [
         time: "2021",
         num: 1,
         url: "SafeDrive.html",
-        img: './images/Air Quality/Group 6 - Picture 5 - Render.png'
+        img: './images/SafeDrive/eat.gif'
     },
     {
         title:"Humidity",
