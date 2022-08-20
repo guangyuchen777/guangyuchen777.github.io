@@ -45,7 +45,7 @@ a {
     display:flex;
     /* align-items: center; */
     cursor: pointer;
-    transform: translate(-100%, 0);
+    transform: translate(-150%, 0);
 }
 
 .Nav_item a {

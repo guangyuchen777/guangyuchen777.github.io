@@ -6,7 +6,7 @@ function Nav() {
                 <h4><a href="index.html">HOME</a></h4>
                 <h4><a href="#Work">WORK</a></h4>
                 <h4><a href="PDP.html">PDP</a></h4>
-                <h4><a href="#Contact">CONTACT</a></h4>
+                {/* <h4><a href="#Contact">CONTACT</a></h4> */}
             </div>
         </div>
     )
@@ -74,7 +74,8 @@ function Work() {
 function Contact() {
     return (
         <div id="Contact">
-            <h1>Contact info</h1>
+            <h1>Guangyu Chen </h1>
+            <h3>g.chen@student.tue.nl</h3>
         </div>
     )
 }
