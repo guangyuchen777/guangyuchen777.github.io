@@ -63,6 +63,7 @@ body {
 .Head {
     display: flex;
     margin-top: 110px;
+    gap:150px;
 }
 
 
@@ -217,7 +218,7 @@ body {
 .tagcloud {
   display: inline-block;
   top: 0;
-  left:30%;
+  left:0;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Bebas Neue', cursive;
@@ -229,4 +230,75 @@ body {
 .tagcloud--item:hover {
   color: var(--hoverColor);
   text-shadow: 0 0 10px #ffffff, 0 0 70px #a127ff;
+}
+
+
+
+
+@media only screen and (max-width: 1486px) {
+    .Head_introduce > h1 {
+        font-size: 55px;
+    }
+    
+    .Head_introduce > h2 {
+        font-size: 35px;
+    }
+    
+    .Head_introduce > h3 {
+        font-size: 18px;
+    }
+
+    .Head {
+        gap:80px;
+    }
+}
+
+
+@media only screen and (max-width: 1217px) {
+    .Head_introduce > h1 {
+        font-size: 60px;
+    }
+    
+    .Head_introduce > h2 {
+        font-size: 40px;
+    }
+    
+    .Head_introduce > h3 {
+        font-size: 23px;
+    }
+
+    .Head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tagcloud {
+       gap: 10px;
+      }
+}
+
+
+@media only screen and (max-width: 510px) {
+    .Head_introduce > h1 {
+        font-size: 40px;
+    }
+    
+    .Head_introduce > h2 {
+        font-size: 25px;
+    }
+    
+    .Head_introduce > h3 {
+        font-size: 13px;
+    }
+
+    .Head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tagcloud {
+       gap: 0px;
+       transform: scale(0.7);
+       left:-50%;
+      }
 }
