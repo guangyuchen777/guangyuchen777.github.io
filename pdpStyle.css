@@ -203,4 +203,16 @@ ul {
     article {
         padding: 0;
     }
+
+    .article_seperation {
+        padding: 0;
+    }
+
+    .container >p {
+        padding: 0;
+    }
+    
+    ul {
+        padding: 0;
+    }
 }
