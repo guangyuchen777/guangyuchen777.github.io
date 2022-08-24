@@ -239,7 +239,6 @@ body {
     .Head_introduce > h1 {
         font-size: 55px;
     }
-    
     .Head_introduce > h2 {
         font-size: 35px;
     }
@@ -255,6 +254,15 @@ body {
 
 
 @media only screen and (max-width: 1217px) {
+    .MainBody {
+        padding: 0 10%;
+    }
+
+    .Head {
+        margin-top: 30px;
+        gap:30px;
+    }
+
     .Head_introduce > h1 {
         font-size: 60px;
     }
@@ -279,6 +287,10 @@ body {
 
 
 @media only screen and (max-width: 510px) {
+    .Nav_logo {
+        font-size: 0%;
+    }
+
     .Head_introduce > h1 {
         font-size: 40px;
     }
@@ -299,6 +311,6 @@ body {
     .tagcloud {
        gap: 0px;
        transform: scale(0.7);
-       left:-50%;
+       left:-40%;
       }
 }

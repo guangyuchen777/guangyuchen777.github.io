@@ -6,7 +6,6 @@ function Nav() {
                 <h4><a href="index.html">HOME</a></h4>
                 <h4><a href="#Work">WORK</a></h4>
                 <h4><a href="PDP.html">PDP</a></h4>
-                {/* <h4><a href="#Contact">CONTACT</a></h4> */}
             </div>
         </div>
     )
