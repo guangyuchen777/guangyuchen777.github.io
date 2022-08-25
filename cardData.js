@@ -67,14 +67,14 @@ const card_data = [
         title:"CHIMAC",
         time: "2022",
         num: 1,
-        url: "http://www.chimac.nl/",
+        url: "Chimac.html",
         img: './images/Chimac/front.jpeg'
     },
     {
         title:"Memento Mori",
         time: "2020",
         num: 1,
-        url: "https://guangyuchen777.github.io/MementoMori/",
+        url: "Memento.html",
         img: './images/Memento Mori/prototype.jpg'
     },
     {
